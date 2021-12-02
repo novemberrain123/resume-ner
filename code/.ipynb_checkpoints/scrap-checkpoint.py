@@ -43,8 +43,8 @@ password = driver.find_element_by_id('password')
 # In[95]:
 
 #PUT IN OWN LOGIN INFO
-username.send_keys("pleaseworkusob@gmail.com")
-password.send_keys("2000qwe5M:::")
+username.send_keys("ur gmail")
+password.send_keys("ur pwd")
 
 
 # In[96]:
