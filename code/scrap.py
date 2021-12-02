@@ -43,8 +43,8 @@ password = driver.find_element_by_id('password')
 # In[95]:
 
 #PUT IN OWN LOGIN INFO
-username.send_keys("")
-password.send_keys("")
+username.send_keys("pleaseworkusob@gmail.com")
+password.send_keys("2000qwe5M:::")
 
 
 # In[96]:
@@ -59,7 +59,7 @@ username.submit()
 search_url="https://www.linkedin.com/search/results/people/?keywords={q}&origin=CLUSTER_EXPANSION&sid=~1J"
 
 #CHANGE q TO DIFFERENT VALUE, IT IS THE SEARCH TERM
-driver.get(search_url.format(q='lim'))
+driver.get(search_url.format(q='muhammad'))
 time.sleep(1)
 
 
@@ -69,17 +69,15 @@ time.sleep(1)
 for i in range(10):
     profile = driver.find_elements_by_css_selector(".app-aware-link[aria-hidden='false']")[i]
     driver.execute_script("arguments[0].click();", profile)
-    time.sleep(1)
+    time.sleep(2)
     element = driver.find_element_by_css_selector("[aria-label='More actions']")
     driver.execute_script("arguments[0].click();", element)
-    time.sleep(1)
+    time.sleep(2)
     element = driver.find_element_by_css_selector("[data-control-name='save_to_pdf']")
     driver.execute_script("arguments[0].click();", element)
     driver.back()
-    time.sleep(0.5)
+    time.sleep(1)
 
-
-# In[ ]:
 
 
 
