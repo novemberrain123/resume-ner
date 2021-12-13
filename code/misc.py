@@ -2,7 +2,7 @@ import os
 import re
 import sys
 import fitz
-from ner_spacy_pred import spacy_predict
+from ner_spacy_pred import spacy_predicts
 
 #parses search query and returns list of file indexes
 def search(q, ner):
@@ -83,7 +83,7 @@ def scan_spacy():
         if filename.endswith(".pdf"):
             num = filename[-8:-4]
             text = read_pdf(os.path.join(directory, filename))
-            f = open(directory + "raw_" + num + ".txt", "w")
+            f = open(directory + "raw_" + num + ".txt", "w", encoding="utf-8")
             f.write(text)
             f.close()
             test_doc, s = spacy_predict(text) 
