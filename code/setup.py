@@ -1,5 +1,5 @@
 import os
-from misc import scan_spacy
+from misc import scan_doc
 import argparse
 
 parser = argparse.ArgumentParser()
@@ -8,11 +8,10 @@ parser.add_argument("-f", action="store_true")
 p = os.popen('./pdffirst.sh')
 print(p.read())
 print("Done duping, beginning spacy scan")
-scan_spacy()
+scan_doc("spacy")
 args = parser.parse_args()
 
 if args.f:
-    from scan_flair import scan_flair
     print("Done spacy scan, beginning flair scan")
-    scan_docs("flair")
+    scan_doc("flair")
     print("Done flair scan")

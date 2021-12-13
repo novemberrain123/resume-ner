@@ -3,6 +3,11 @@ import re
 import sys
 import fitz
 from ner_spacy_pred import spacy_predict
+try:
+    from ner_flair_pred import flair_predict
+except Exception:
+    print("flair import failed")
+
 
 #parses search query and returns list of file indexes
 def search(q, ner):
@@ -50,6 +55,11 @@ def special_search(q, ner):
             return matches
         tag = re.findall(r'^\S*', s)[0]
     else:
+        try:
+            from ner_flair_pred import flair_predict
+        except Exception:
+            print("FLAIR IMPORT FAILED")
+            return matches
         s = flair_predict(q)
         if s == "":
             return matches
@@ -77,7 +87,7 @@ def special_search(q, ner):
     return matches
 
 #Does NER
-def scan_spacy():
+def scan_doc(ner):
     directory = "static/"
     for filename in os.listdir(directory):
         if filename.endswith(".pdf"):
@@ -86,8 +96,11 @@ def scan_spacy():
             f = open(directory + "raw_" + num + ".txt", "w", encoding="utf-8")
             f.write(text)
             f.close()
-            test_doc, s = spacy_predict(text) 
-            f = open(directory + "spacy/" + "ner_" + num + ".txt", "w")
+            if ner == "spacy":
+                test_doc, s = spacy_predict(text) 
+            else:
+                s = flair_predict(text)
+            f = open(directory + ner + "/" + "ner_" + num + ".txt", "w")
             f.write(s)
             f.close()
                 

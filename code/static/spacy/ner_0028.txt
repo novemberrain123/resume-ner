@@ -1,4 +1,4 @@
 COLLEGENAME                   - taylor's university
 LOCATION                      - kuala lumpur
-COLLEGENAME                   - taylor’s university
+COLLEGENAME                   - taylorâ€™s university
 YEARSOFEXPERIENCE             - 2 months)

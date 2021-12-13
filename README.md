@@ -9,7 +9,8 @@ Yong Yung Jun - Data Extraction
 
 ## How to run
 1. Install requirements - `pip install -r requirements.txt`
-2. (For Linux systems) Run resume.sh - `./resume.sh`
+2. (optional) If new files are added to `static`, run `setup.py` to do NER on them, it has an optional flag `-f` for the Flair NER engine requiring CUDA
+3. (For Linux systems) Run resume.sh - `./resume.sh`
 
    (For Windows systems) Run resume.bat - `resume.bat`
 
