@@ -12,6 +12,6 @@ def scan_flair():
             f.write(text)
             f.close()
             s = flair_predict(text)
-            f = open(directory + ner + "/" + "ner_" + num + ".txt", "w")
+            f = open(directory + "flair/" + "ner_" + num + ".txt", "w")
             f.write(s)
             f.close()

@@ -87,7 +87,7 @@ def scan_spacy():
             f.write(text)
             f.close()
             test_doc, s = spacy_predict(text) 
-            f = open(directory + ner + "/" + "ner_" + num + ".txt", "w")
+            f = open(directory + "spacy/" + "ner_" + num + ".txt", "w")
             f.write(s)
             f.close()
                 
