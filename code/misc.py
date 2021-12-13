@@ -2,7 +2,7 @@ import os
 import re
 import sys
 import fitz
-from ner_spacy_pred import spacy_predicts
+from ner_spacy_pred import spacy_predict
 
 #parses search query and returns list of file indexes
 def search(q, ner):
