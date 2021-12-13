@@ -12,6 +12,7 @@ requests
 selenium==4.1.0
 seqeval==1.2.2
 spacy==2.3.5
+spacy-lookups-data==1.0.3
 tabulate==0.8.9
 webdriver_manager==3.5.2
 PyMuPDF==1.19.2
