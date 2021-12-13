@@ -3,7 +3,6 @@ import re
 import sys
 import fitz
 from ner_spacy_pred import spacy_predict
-from ner_flair_pred import flair_predict
 
 #parses search query and returns list of file indexes
 def search(q, ner):
@@ -78,7 +77,7 @@ def special_search(q, ner):
     return matches
 
 #Does NER
-def scan_docs(ner):
+def scan_spacy():
     directory = "static/"
     for filename in os.listdir(directory):
         if filename.endswith(".pdf"):
@@ -87,10 +86,7 @@ def scan_docs(ner):
             f = open(directory + "raw_" + num + ".txt", "w")
             f.write(text)
             f.close()
-            if ner == "spacy":
-                test_doc, s = spacy_predict(text) 
-            else:
-                s = flair_predict(text)
+            test_doc, s = spacy_predict(text) 
             f = open(directory + ner + "/" + "ner_" + num + ".txt", "w")
             f.write(s)
             f.close()
