@@ -1,0 +1,4 @@
+Span [12,13]: "jess jessica"   [− Labels: NAM (0.9366)]
+Span [16]: "uitm"   [− Labels: COM (0.9054)]
+Span [17,18]: "shah alam"   [− Labels: LOC (0.7606)]
+Span [19,20]: "kuala lumpur"   [− Labels: LOC (0.785)]

@@ -1,0 +1,8 @@
+Span [14]: "leadership"   [− Labels: SKI (0.9999)]
+Span [15,16]: "sales management"   [− Labels: SKI (0.9643)]
+Span [17,18]: "stephen lim"   [− Labels: NAM (0.9984)]
+Span [22,23,24]: "goldsoft sdn bhd"   [− Labels: COM (0.9986)]
+Span [25]: "selangor"   [− Labels: LOC (0.9974)]
+Span [40,41,42]: "goldsoft sdn bhd"   [− Labels: COM (0.7969)]
+Span [43,44,45,46]: "24 years 9 months"   [− Labels: YOE (0.9013)]
+Span [54,55,56,57]: "24 years 9 months"   [− Labels: YOE (0.8867)]

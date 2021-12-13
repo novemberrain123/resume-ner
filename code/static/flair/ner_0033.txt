@@ -1,0 +1,7 @@
+Span [30,31]: "graphic design"   [− Labels: SKI (0.9259)]
+Span [32,33]: "adobe creative"   [− Labels: SKI (0.9565)]
+Span [34,35]: "suite graphics"   [− Labels: SKI (0.7904)]
+Span [53,54]: "stephen lau"   [− Labels: NAM (0.9856)]
+Span [62,63]: "kuala lumpur"   [− Labels: LOC (0.975)]
+Span [169,170]: "stephen lau"   [− Labels: NAM (0.827)]
+Span [180,181,182,183]: "16 years 8 months"   [− Labels: YOE (0.8091)]

@@ -1,0 +1,7 @@
+Span [12]: "management"   [− Labels: SKI (0.9937)]
+Span [13,14]: "customer service"   [− Labels: SKI (0.8582)]
+Span [15,16]: "microsoft office"   [− Labels: SKI (0.9958)]
+Span [50,51]: "kuala lumpur"   [− Labels: LOC (0.9376)]
+Span [57,58,59]: "iowa state university"   [− Labels: COL (0.761)]
+Span [88,89,90,91]: "1 year 2 months"   [− Labels: YOE (0.9231)]
+Span [353,354,355]: "iowa state university"   [− Labels: COL (0.9271)]

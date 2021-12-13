@@ -14,7 +14,17 @@ import requests
 from webdriver_manager.chrome import ChromeDriverManager
 from selenium.common.exceptions import ElementClickInterceptedException
 
+import argparse
 
+parser = argparse.ArgumentParser(description='Query')
+parser.add_argument('email', type=str)
+parser.add_argument('pw', type=str)
+parser.add_argument('query', type=str)
+
+args = parser.parse_args()
+print(args.email)
+print(args.pw)
+print(args.query)
 # In[92]:
 
 
@@ -43,8 +53,8 @@ password = driver.find_element_by_id('password')
 # In[95]:
 
 #PUT IN OWN LOGIN INFO
-username.send_keys("ur gmail")
-password.send_keys("ur pwd")
+username.send_keys(args.email)
+password.send_keys(args.pw)
 
 
 # In[96]:
@@ -59,7 +69,7 @@ username.submit()
 search_url="https://www.linkedin.com/search/results/people/?keywords={q}&origin=CLUSTER_EXPANSION&sid=~1J"
 
 #CHANGE q TO DIFFERENT VALUE, IT IS THE SEARCH TERM
-driver.get(search_url.format(q='muhammad'))
+driver.get(search_url.format(q=args.query))
 time.sleep(1)
 
 
@@ -75,6 +85,8 @@ for i in range(10):
     time.sleep(2)
     element = driver.find_element_by_css_selector("[data-control-name='save_to_pdf']")
     driver.execute_script("arguments[0].click();", element)
+    time.sleep(1)
+    driver.back()
     driver.back()
     time.sleep(1)
 

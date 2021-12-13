@@ -1,0 +1,5 @@
+Span [12,13]: "leadership marketing"   [− Labels: SKI (0.8047)]
+Span [14,15]: "strategic planning"   [− Labels: SKI (0.8719)]
+Span [63,64]: "kuala lumpur"   [− Labels: LOC (0.9159)]
+Span [91,92]: "4 months"   [− Labels: YOE (0.81)]
+Span [412,413,414]: "universiti utara malaysia"   [− Labels: COL (0.8113)]

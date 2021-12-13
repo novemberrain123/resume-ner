@@ -1,0 +1,4 @@
+Span [12,13]: "francis lee"   [− Labels: NAM (0.9937)]
+Span [20,21]: "kuala lumpur"   [− Labels: LOC (0.909)]
+Span [23,24,25,26,27]: "monster technologies malaysia sdn bhd"   [− Labels: COM (0.7606)]
+Span [38,39,40,41]: "5 years 5 months"   [− Labels: YOE (0.9292)]

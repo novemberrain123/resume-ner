@@ -1,0 +1,4 @@
+Span [12,13,14]: "bryan thea bryan"   [− Labels: NAM (0.9018)]
+Span [15,16]: "kuala lumpur"   [− Labels: LOC (0.8963)]
+Span [18,19,20,21]: "tourplus technology sdn bhd"   [− Labels: COM (0.8062)]
+Span [35,36,37,38]: "kdu penang university college"   [− Labels: COL (0.9735)]

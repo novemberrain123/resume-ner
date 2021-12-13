@@ -1,0 +1,6 @@
+Span [20]: "tourism"   [− Labels: SKI (0.9992)]
+Span [21]: "vacation"   [− Labels: SKI (0.8953)]
+Span [22]: "cruises"   [− Labels: SKI (0.7105)]
+Span [25,26]: "francis wong"   [− Labels: NAM (0.9991)]
+Span [29,30,31,32,33,34]: "nanyang tours & travel sdn bhd"   [− Labels: COM (0.9054)]
+Span [35]: "ampang"   [− Labels: LOC (0.8792)]

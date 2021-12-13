@@ -1,0 +1,6 @@
+Span [14,15]: "event management"   [− Labels: SKI (0.9855)]
+Span [16,17,18]: "event planning management"   [− Labels: SKI (0.9576)]
+Span [22,23]: "jessica yap"   [− Labels: NAM (0.9935)]
+Span [26]: "selangor"   [− Labels: LOC (0.999)]
+Span [28,29,30,31]: "jm estate sdn bhd"   [− Labels: COM (0.8313)]
+Span [39,40,41,42]: "6 years 5 months"   [− Labels: YOE (0.9239)]

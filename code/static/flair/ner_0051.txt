@@ -1,0 +1,8 @@
+Span [14]: "teaching"   [− Labels: SKI (0.9794)]
+Span [15,16]: "customer service"   [− Labels: SKI (0.7834)]
+Span [17,18]: "microsoft excel"   [− Labels: SKI (0.994)]
+Span [19,20]: "jessica yaw"   [− Labels: NAM (0.9671)]
+Span [27,28]: "haler international"   [− Labels: COM (0.9828)]
+Span [29,30]: "sungai buloh"   [− Labels: LOC (0.8225)]
+Span [116,117,118,119]: "2 years 3 months"   [− Labels: YOE (0.9128)]
+Span [271,272,273,274,275]: "tunku abdul rahman university college"   [− Labels: COL (0.9863)]

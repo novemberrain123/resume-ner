@@ -1,0 +1,8 @@
+Span [14,15]: "curriculum development"   [− Labels: SKI (0.7562)]
+Span [16]: "curriculum"   [− Labels: SKI (0.9392)]
+Span [17,18]: "design educational"   [− Labels: SKI (0.5959)]
+Span [19]: "leadership"   [− Labels: SKI (0.5113)]
+Span [20,21]: "ahmad mahmud"   [− Labels: NAM (0.9858)]
+Span [25,26]: "kuala lumpur"   [− Labels: LOC (0.9414)]
+Span [35,36,37,38]: "12 years 9 months"   [− Labels: YOE (0.873)]
+Span [41,42,43,44]: "queen 's university belfast"   [− Labels: COL (0.924)]

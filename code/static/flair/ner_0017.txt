@@ -1,0 +1,7 @@
+Span [14]: "outsourcing"   [− Labels: SKI (1.0)]
+Span [15,16]: "business intelligence"   [− Labels: SKI (0.9276)]
+Span [17,18]: "vendor management"   [− Labels: SKI (0.9903)]
+Span [48,49]: "francis meganathan"   [− Labels: NAM (0.9755)]
+Span [54,55]: "kuala lumpur"   [− Labels: LOC (0.9677)]
+Span [509,510,511,512]: "london south bank university"   [− Labels: COL (0.9301)]
+Span [522,523,524]: "university of brighton"   [− Labels: COL (0.8118)]

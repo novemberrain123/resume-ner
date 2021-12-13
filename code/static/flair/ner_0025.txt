@@ -1,0 +1,7 @@
+Span [14,15]: "project management"   [− Labels: SKI (0.9823)]
+Span [16,17]: "pre-sales disaster"   [− Labels: SKI (0.9573)]
+Span [18]: "recovery"   [− Labels: SKI (0.6027)]
+Span [19,20]: "bryan my"   [− Labels: NAM (0.9484)]
+Span [24,25,26,27,28]: "silverlake innovation partners sdn bhd"   [− Labels: COM (0.9106)]
+Span [29,30]: "kuala lumpur"   [− Labels: LOC (0.9784)]
+Span [63,64,65,66]: "6 years 11 months"   [− Labels: YOE (0.9552)]

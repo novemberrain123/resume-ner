@@ -1,0 +1,7 @@
+Span [14,15]: "marine engineering"   [− Labels: SKI (0.8268)]
+Span [16,17]: "dredging reclamation"   [− Labels: SKI (0.9328)]
+Span [18,19]: "ahmad zulkarnain"   [− Labels: NAM (0.8195)]
+Span [23,24,25,26]: "mesra galian sdn bhd"   [− Labels: COM (0.9854)]
+Span [27,28]: "kuala lumpur"   [− Labels: LOC (0.9515)]
+Span [41,42]: "3 years"   [− Labels: YOE (0.9104)]
+Span [113,114,115]: "universiti putra malaysia"   [− Labels: COL (0.9426)]

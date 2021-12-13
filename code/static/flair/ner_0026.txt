@@ -1,0 +1,5 @@
+Span [14,15]: "sales marketing"   [− Labels: SKI (0.994)]
+Span [16,17]: "general management"   [− Labels: SKI (0.7704)]
+Span [18,19]: "bryan chan"   [− Labels: NAM (0.997)]
+Span [24,25,26,27,28,29]: "chuan huat industrial marketing sdn bhd"   [− Labels: COM (0.9005)]
+Span [30,31]: "kuala lumpur"   [− Labels: LOC (0.9697)]

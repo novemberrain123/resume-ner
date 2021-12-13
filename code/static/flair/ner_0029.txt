@@ -1,0 +1,8 @@
+Span [14]: "medical"   [− Labels: SKI (0.9992)]
+Span [15,16]: "devices new"   [− Labels: SKI (0.6639)]
+Span [17,18]: "business development"   [− Labels: SKI (0.9347)]
+Span [19,20,21]: "bryan lee neolee"   [− Labels: NAM (0.9563)]
+Span [23,24,25]: "supply sdn bhd"   [− Labels: COM (0.9073)]
+Span [26,27]: "kuala lumpur"   [− Labels: LOC (0.947)]
+Span [59,60]: "8 years"   [− Labels: YOE (0.7762)]
+Span [107,108,109,110]: "the university of wolverhampton"   [− Labels: COL (0.8716)]

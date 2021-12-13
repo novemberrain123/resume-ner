@@ -1,0 +1,6 @@
+Span [14,15]: "microsoft office"   [− Labels: SKI (0.9723)]
+Span [16,17]: "customer service"   [− Labels: SKI (0.9776)]
+Span [18,19]: "social media"   [− Labels: SKI (0.9175)]
+Span [20,21,22,23]: "farah nur anis farah"   [− Labels: NAM (0.9757)]
+Span [24,25]: "kuala lumpur"   [− Labels: LOC (0.7661)]
+Span [417,418,419]: "universiti teknologi mara"   [− Labels: COL (0.9211)]

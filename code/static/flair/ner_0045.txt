@@ -1,0 +1,5 @@
+Span [14,15]: "management consulting"   [− Labels: SKI (0.8963)]
+Span [16,17]: "business strategy"   [− Labels: SKI (0.8204)]
+Span [18,19]: "business planning"   [− Labels: SKI (0.9579)]
+Span [32,33]: "jessica hong"   [− Labels: NAM (0.9862)]
+Span [40,41]: "kuala lumpur"   [− Labels: LOC (0.8958)]

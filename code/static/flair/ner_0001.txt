@@ -1,0 +1,3 @@
+Span [12,13,14]: "ahmad zahid ahmad"   [− Labels: NAM (0.9633)]
+Span [15,16]: "shah alam"   [− Labels: LOC (0.6393)]
+Span [28,29]: "2 months"   [− Labels: YOE (0.8062)]

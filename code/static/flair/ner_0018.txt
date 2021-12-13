@@ -1,0 +1,5 @@
+Span [12,13]: "francis chuah"   [− Labels: NAM (0.9979)]
+Span [18,19,20,21,22]: "urban farm tech sdn bhd"   [− Labels: COM (0.9879)]
+Span [23]: "puchong"   [− Labels: LOC (0.9196)]
+Span [36,37,38,39]: "5 years 11 months"   [− Labels: YOE (0.882)]
+Span [127,128,129]: "sheffield hallam university"   [− Labels: COL (0.9362)]

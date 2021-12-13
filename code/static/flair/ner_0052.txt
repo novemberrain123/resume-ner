@@ -1,0 +1,5 @@
+Span [12,13,14]: "telekom analyst marketing"   [− Labels: SKI (0.9156)]
+Span [18,19]: "jessica maurice"   [− Labels: NAM (0.9111)]
+Span [27]: "puchong"   [− Labels: LOC (0.9955)]
+Span [77,78,79,80]: "3 years 2 months"   [− Labels: YOE (0.9047)]
+Span [83,84,85,86,87]: "kuala lumpur metropolitan university college"   [− Labels: COL (0.6888)]

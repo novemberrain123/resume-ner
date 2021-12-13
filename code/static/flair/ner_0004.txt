@@ -1,0 +1,2 @@
+Span [20,21,22]: "university college malaysia"   [− Labels: COL (0.9084)]
+Span [36,37,38,39]: "14 years 6 months"   [− Labels: YOE (0.8661)]

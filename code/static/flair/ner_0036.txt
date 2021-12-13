@@ -1,0 +1,8 @@
+Span [14,15]: "university teaching"   [− Labels: SKI (0.7089)]
+Span [16,17]: "higher education"   [− Labels: SKI (0.9414)]
+Span [18]: "lecturing"   [− Labels: SKI (0.9964)]
+Span [23,24]: "stephen jambunathan"   [− Labels: NAM (0.9971)]
+Span [28,29,30]: "university of malaya"   [− Labels: COL (0.7387)]
+Span [31,32]: "kuala lumpur"   [− Labels: LOC (0.773)]
+Span [43,44]: "8 years"   [− Labels: YOE (0.7749)]
+Span [88,89,90]: "university of cambridge"   [− Labels: COL (0.9316)]

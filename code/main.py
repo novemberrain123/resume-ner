@@ -1,15 +1,24 @@
 from flask import Flask, request, render_template
-from search import search
+import os 
+from misc import search
+
 app = Flask(__name__)
 
+#generate home page for user query
 @app.route("/")
-def index():
+def index():    
     return render_template('index.html')
 
-
+#generate result page
 @app.route('/', methods=['POST'])
 def my_form_post():
+    if request.form['button'] == 'spacy':
+        ner = 'spacy'
+    if request.form['button'] == 'flair':
+        ner = 'flair'
+
     text = request.form['text']
     #returns list containing file indexes
-    idxs = search(text)
-    return render_template('result.html', idxs)
+    matches, special = search(text, ner)
+    return render_template('result.html', idxs = matches, len_idxs = len(matches), ner = ner, special = special)
+

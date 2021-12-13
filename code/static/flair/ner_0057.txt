@@ -1,0 +1,5 @@
+Span [22]: "engineering"   [− Labels: SKI (0.6578)]
+Span [23,24,25,26,27,28]: "ahmad saiful aqmal bin ahmad sohaimi"   [− Labels: NAM (0.9936)]
+Span [37]: "semenyih"   [− Labels: LOC (0.9972)]
+Span [53,54,55,56]: "the university of miyazaki"   [− Labels: COL (0.8729)]
+Span [141,142,143]: "university of miyazaki"   [− Labels: COL (0.9585)]

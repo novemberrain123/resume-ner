@@ -1,0 +1,8 @@
+Span [14]: "social"   [− Labels: SKI (1.0)]
+Span [15,16]: "media marketing"   [− Labels: SKI (0.9522)]
+Span [17]: "teamwork"   [− Labels: SKI (0.982)]
+Span [18,19]: "time management"   [− Labels: SKI (0.8345)]
+Span [70,71]: "tasya ahmad"   [− Labels: NAM (0.7402)]
+Span [82,83]: "kuala lumpur"   [− Labels: LOC (0.9093)]
+Span [130,131]: "sarah ahmad"   [− Labels: NAM (0.9502)]
+Span [267,268,269,270]: "1 year 2 months"   [− Labels: YOE (0.7941)]

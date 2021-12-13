@@ -1,0 +1,4 @@
+Span [15,16]: "money laundering"   [− Labels: SKI (0.8255)]
+Span [17,18]: "internal controls"   [− Labels: SKI (0.8172)]
+Span [50,51]: "kuala lumpur"   [− Labels: LOC (0.9708)]
+Span [64,65,66,67]: "3 years 1 month"   [− Labels: YOE (0.8578)]

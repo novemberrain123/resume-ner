@@ -1,0 +1,95 @@
+<!doctype html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>RMS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+
+<body>
+  <h1>Resume Management System</h1>
+  <div>
+    <p>Queried Documents</p>
+    <div id=results></div>
+    <script>
+      var msg = document.createElement("P")
+      if ({{ len_idxs }} == 0) {
+        msg.innerHTML = "No documents found! Try another query or other engine"
+      }
+      else if ({{ special }} == 0) {
+        msg.innerHTML = "{{len_idxs}} documents found!"
+      }
+      else {
+        msg.innerHTML = "No matching documents found! {{len_idxs}} RELATED documents found!"
+      }
+      document.getElementById("results").appendChild(msg)
+      const zeroPad = (num, places) => String(num).padStart(places, '0')
+      let ner = "{{ner}}"
+      {% for idx in idxs %}
+      var index = "{{idx[0]}}"
+      var highlight = {{ idx[2]}}
+
+      var doc = document.createElement("DIV")
+
+
+      /*ADD IMAGE*/
+      var dl = document.createElement("A")
+      var href = document.createAttribute("href")
+      href.value = "/static/json_" + index + ".pdf"
+      dl.setAttributeNode(href)
+      dl.setAttributeNode(document.createAttribute("download"))
+      var target = document.createAttribute("target")
+      target.value = "_blank"
+      dl.setAttributeNode(target)
+
+      var img = document.createElement("IMG")
+      var src = document.createAttribute("src")
+      src.value = "/static/img_" + index + ".jpeg"
+      var height = document.createAttribute("height")
+      height.value = 300
+      img.setAttributeNode(height)
+      img.setAttributeNode(src)
+
+      dl.appendChild(img)
+
+      /*ADD TEXT*/
+      var textfield = document.createElement("DIV")
+      var i = 0
+      {% for line in idx[1] %}
+      var text = document.createElement("P")
+      var font = document.createAttribute("style")
+      text.setAttributeNode(font)
+      font.value = "font-size:15;margin:0px"
+      text.innerHTML += "{{line}}"
+      if (i == highlight) {
+        var color = document.createAttribute("style")
+        color.value = "font-size:15;margin:0px;background-color:yellow;"
+        text.setAttributeNode(color)
+      }
+
+      /*textfield.appendChild(document.createTextNode("{{line}}"))*/
+      textfield.appendChild(text)
+      /*textfield.appendChild(document.createElement("BR"))*/
+      i += 1
+      {% endfor %}
+      var style = document.createAttribute("style")
+      style.value = "float:right;"
+      textfield.setAttributeNode(style)
+      /*ADD TO DIV*/
+      doc.appendChild(dl)
+      doc.appendChild(textfield)
+
+      document.getElementById('results').appendChild(doc)
+
+      {% endfor %}
+    </script>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,7 @@
+Span [14,15]: "oil /"   [− Labels: SKI (0.886)]
+Span [16,17]: "gas epc"   [− Labels: SKI (0.8991)]
+Span [18]: "petroleum"   [− Labels: SKI (0.7869)]
+Span [19,20]: "stephen hon"   [− Labels: NAM (0.9932)]
+Span [23,24,25,26]: "tgr resources sdn bhd"   [− Labels: COM (0.9934)]
+Span [27,28]: "kuala lumpur"   [− Labels: LOC (0.9455)]
+Span [39,40]: "11 years"   [− Labels: YOE (0.7204)]

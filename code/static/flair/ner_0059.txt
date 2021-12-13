@@ -1,0 +1,2 @@
+Span [14]: "gltm"   [− Labels: COM (0.9722)]
+Span [15]: "selangor"   [− Labels: LOC (0.9931)]

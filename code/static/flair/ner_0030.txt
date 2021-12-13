@@ -1,0 +1,6 @@
+Span [12,13]: "bryan hng"   [− Labels: NAM (0.997)]
+Span [18,19,20,21]: "bullish aim sdn bhd"   [− Labels: COM (0.9969)]
+Span [22,23]: "kuala lumpur"   [− Labels: LOC (0.9715)]
+Span [25,26,27,28]: "bullish aim sdn bhd"   [− Labels: COM (0.7966)]
+Span [37,38,39,40]: "5 years 4 months"   [− Labels: YOE (0.8526)]
+Span [43,44]: "lodge school"   [− Labels: COL (0.7373)]

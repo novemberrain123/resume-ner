@@ -1,0 +1,8 @@
+Span [30]: "entrepreneurship"   [− Labels: SKI (0.9985)]
+Span [31]: "start-ups"   [− Labels: SKI (0.9863)]
+Span [32,33]: "web development"   [− Labels: SKI (0.8081)]
+Span [34,35]: "bryan cheong"   [− Labels: NAM (0.9984)]
+Span [40,41,42,43]: "syntax technologies sdn bhd"   [− Labels: COM (0.8855)]
+Span [44]: "setapak"   [− Labels: LOC (0.9572)]
+Span [99,100]: "bryan cheong"   [− Labels: NAM (0.9339)]
+Span [274,275,276,277,278]: "tunku abdul rahman university college"   [− Labels: COL (0.9877)]

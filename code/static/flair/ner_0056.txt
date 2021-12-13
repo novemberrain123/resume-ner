@@ -1,0 +1,6 @@
+Span [12,13,14]: "mohd fuad ahmad"   [− Labels: NAM (0.9197)]
+Span [17]: "arkitek"   [− Labels: COM (0.9579)]
+Span [18,19]: "fuad ahmad"   [− Labels: NAM (0.702)]
+Span [20,21]: "shah alam"   [− Labels: LOC (0.7382)]
+Span [33,34]: "9 years"   [− Labels: YOE (0.7451)]
+Span [136,137,138]: "universiti teknologi mara"   [− Labels: COL (0.9092)]

@@ -1,0 +1,8 @@
+Span [14]: "recruiting"   [− Labels: SKI (0.9997)]
+Span [15]: "garden"   [− Labels: SKI (0.917)]
+Span [16,17]: "market research"   [− Labels: SKI (0.8754)]
+Span [18,19]: "jessica jessica"   [− Labels: NAM (0.9776)]
+Span [29,30]: "kuala lumpur"   [− Labels: LOC (0.9127)]
+Span [47,48]: "royal college"   [− Labels: COL (0.7597)]
+Span [238,239]: "3 years"   [− Labels: YOE (0.7851)]
+Span [257,258,259]: "royal college of"   [− Labels: COL (0.9197)]
