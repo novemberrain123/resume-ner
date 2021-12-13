@@ -1,23 +1,32 @@
 <!doctype html>
-
 <html lang="en">
+
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
   <title>RMS</title>
-  <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-  <h1>Resume Management System</h1>
-  <h5>By Lim Hang Shen, Liew Zi Feng, Yong Yung Jun</h3>
-
-  <form method="POST" target="_blank">
-    <input name="text">
-    <input type="submit" name="button" value="spacy">
-    <input type="submit" name="button" value="flair">
-  </form>
-
+  <div class="mainpage">
+    <div class="container">
+      <div class="intro">
+        <h2 class="text-center">Resume Management System</h2>
+        <p class="text-center">By Lim Hang Shen, Liew Zi Feng, Yong Yung Jun</p>
+      </div>
+      <form class="form-inline" method="POST" target="_blank">
+        <div class="form-group">
+          <input class="form-control" name="text" placeholder="Keywords">
+        </div>
+        <div class="form-group">
+          <input class="btn btn-primary" type="submit" name="button" value="spacy">
+          <input class="btn btn-primary" type="submit" name="button" value="flair">
+        </div>
+      </form>
+    </div>
+  </div>
 </body>
+
 </html>

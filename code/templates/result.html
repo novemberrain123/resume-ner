@@ -7,89 +7,93 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>RMS</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" type="text/css" href="{{ url_for('static', filename='style.css')}}">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
 </head>
 
 
 <body>
-  <h1>Resume Management System</h1>
-  <div>
-    <p>Queried Documents</p>
-    <div id=results></div>
-    <script>
-      var msg = document.createElement("P")
-      if ({{ len_idxs }} == 0) {
-        msg.innerHTML = "No documents found! Try another query or other engine"
-      }
+  <div class="resultpage">
+    <h1 id="resHeader">Resume Management System</h1>
+    <div>
+      <p id="p1">Queried Documents</p>
+      <br>
+      <div id=results></div>
+      <script>
+        var msg = document.createElement("P")
+        msg.setAttribute("id", "p2")
+        if ({{ len_idxs }} == 0) {
+          msg.innerHTML = "No documents found! Try another query or other engine"
+        }
       else if ({{ special }} == 0) {
-        msg.innerHTML = "{{len_idxs}} documents found!"
-      }
+          msg.innerHTML = "{{len_idxs}} documents found!"
+        }
       else {
-        msg.innerHTML = "No matching documents found! {{len_idxs}} RELATED documents found!"
-      }
-      document.getElementById("results").appendChild(msg)
-      const zeroPad = (num, places) => String(num).padStart(places, '0')
-      let ner = "{{ner}}"
-      {% for idx in idxs %}
-      var index = "{{idx[0]}}"
-      var highlight = {{ idx[2]}}
+          msg.innerHTML = "No matching documents found! {{len_idxs}} RELATED documents found!"
+        }
+        document.getElementById("results").appendChild(msg)
+        const zeroPad = (num, places) => String(num).padStart(places, '0')
+        let ner = "{{ner}}"
+        {% for idx in idxs %}
+        var index = "{{idx[0]}}"
+        var highlight = {{ idx[2]}}
 
-      var doc = document.createElement("DIV")
+        var doc = document.createElement("DIV")
+        doc.setAttribute("id", "resultID")
+        /*ADD IMAGE*/
+        var dl = document.createElement("A")
+        var href = document.createAttribute("href")
+        href.value = "/static/json_" + index + ".pdf"
+        dl.setAttributeNode(href)
+        dl.setAttributeNode(document.createAttribute("download"))
+        var target = document.createAttribute("target")
+        target.value = "_blank"
+        dl.setAttributeNode(target)
 
+        var img = document.createElement("IMG")
+        var src = document.createAttribute("src")
+        src.value = "/static/img_" + index + ".jpeg"
+        var height = document.createAttribute("height")
+        height.value = 300
+        img.setAttributeNode(height)
+        img.setAttributeNode(src)
 
-      /*ADD IMAGE*/
-      var dl = document.createElement("A")
-      var href = document.createAttribute("href")
-      href.value = "/static/json_" + index + ".pdf"
-      dl.setAttributeNode(href)
-      dl.setAttributeNode(document.createAttribute("download"))
-      var target = document.createAttribute("target")
-      target.value = "_blank"
-      dl.setAttributeNode(target)
+        dl.appendChild(img)
 
-      var img = document.createElement("IMG")
-      var src = document.createAttribute("src")
-      src.value = "/static/img_" + index + ".jpeg"
-      var height = document.createAttribute("height")
-      height.value = 300
-      img.setAttributeNode(height)
-      img.setAttributeNode(src)
+        /*ADD TEXT*/
+        var textfield = document.createElement("DIV")
+        textfield.setAttribute("class", "textClass")
+        var i = 0
+        {% for line in idx[1] %}
+        var text = document.createElement("P")
+        var font = document.createAttribute("style")
+        text.setAttributeNode(font)
+        font.value = "font-size:15;margin-top:3px; margin-left:30px; padding-top:7px"
+        text.innerHTML += "{{line}}"
+        if (i == highlight) {
+          var color = document.createAttribute("style")
+          color.value = "font-size:15;margin:0px;background-color:yellow; margin-left:30px"
+          text.setAttributeNode(color)
+        }
 
-      dl.appendChild(img)
+        /*textfield.appendChild(document.createTextNode("{{line}}"))*/
+        textfield.appendChild(text)
+        /*textfield.appendChild(document.createElement("BR"))*/
+        i += 1
+        {% endfor %}
+        var style = document.createAttribute("style")
+        style.value = "float:right;"
+        textfield.setAttributeNode(style)
+        /*ADD TO DIV*/
+        doc.appendChild(dl)
+        doc.appendChild(textfield)
 
-      /*ADD TEXT*/
-      var textfield = document.createElement("DIV")
-      var i = 0
-      {% for line in idx[1] %}
-      var text = document.createElement("P")
-      var font = document.createAttribute("style")
-      text.setAttributeNode(font)
-      font.value = "font-size:15;margin:0px"
-      text.innerHTML += "{{line}}"
-      if (i == highlight) {
-        var color = document.createAttribute("style")
-        color.value = "font-size:15;margin:0px;background-color:yellow;"
-        text.setAttributeNode(color)
-      }
+        document.getElementById('results').appendChild(doc)
 
-      /*textfield.appendChild(document.createTextNode("{{line}}"))*/
-      textfield.appendChild(text)
-      /*textfield.appendChild(document.createElement("BR"))*/
-      i += 1
-      {% endfor %}
-      var style = document.createAttribute("style")
-      style.value = "float:right;"
-      textfield.setAttributeNode(style)
-      /*ADD TO DIV*/
-      doc.appendChild(dl)
-      doc.appendChild(textfield)
-
-      document.getElementById('results').appendChild(doc)
-
-      {% endfor %}
-    </script>
+        {% endfor %}
+      </script>
+    </div>
   </div>
-
 </body>
 
 </html>
