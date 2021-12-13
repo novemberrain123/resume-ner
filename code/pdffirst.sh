@@ -4,7 +4,7 @@
 #and also generates a thumbnail for each pdf
 
 cd static
-find . -type f -delete
+find . ! -name 'style.css' ! -name 'bg.jpg' -type f -delete
 cd ../../data
 cp -a deployment/. ../code/static/
 cd ../code/static

@@ -5,9 +5,8 @@ import fitz
 from ner_spacy_pred import spacy_predict
 try:
     from ner_flair_pred import flair_predict
-except Exception:
-    print("flair import failed")
-
+except Exception as e:
+    print(str(e))
 
 #parses search query and returns list of file indexes
 def search(q, ner):
@@ -57,8 +56,8 @@ def special_search(q, ner):
     else:
         try:
             from ner_flair_pred import flair_predict
-        except Exception:
-            print("FLAIR IMPORT FAILED")
+        except Exception as e:
+            print(str(e))
             return matches
         s = flair_predict(q)
         if s == "":
