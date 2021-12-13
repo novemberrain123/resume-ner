@@ -13,22 +13,22 @@
 
 
 <body>
-  <div class="resultpage">
+  <div id="resultpage">
     <h1 id="resHeader">Resume Management System</h1>
     <div>
       <p id="p1">Queried Documents</p>
       <br>
-      <div id=results></div>
+      <div id=results ></div>
       <script>
         var msg = document.createElement("P")
         msg.setAttribute("id", "p2")
         if ({{ len_idxs }} == 0) {
           msg.innerHTML = "No documents found! Try another query or other engine"
         }
-      else if ({{ special }} == 0) {
+        else if ({{ special }} == 0) {
           msg.innerHTML = "{{len_idxs}} documents found!"
         }
-      else {
+        else {
           msg.innerHTML = "No matching documents found! {{len_idxs}} RELATED documents found!"
         }
         document.getElementById("results").appendChild(msg)
@@ -39,13 +39,16 @@
         var highlight = {{ idx[2]}}
 
         var doc = document.createElement("DIV")
-        doc.setAttribute("id", "resultID")
+        doc.setAttribute("class", "result")
         /*ADD IMAGE*/
         var dl = document.createElement("A")
         var href = document.createAttribute("href")
         href.value = "/static/json_" + index + ".pdf"
         dl.setAttributeNode(href)
         dl.setAttributeNode(document.createAttribute("download"))
+        var style = document.createAttribute("style")
+        style.value = "float:left"
+        dl.setAttributeNode(style)
         var target = document.createAttribute("target")
         target.value = "_blank"
         dl.setAttributeNode(target)
@@ -66,13 +69,10 @@
         var i = 0
         {% for line in idx[1] %}
         var text = document.createElement("P")
-        var font = document.createAttribute("style")
-        text.setAttributeNode(font)
-        font.value = "font-size:15;margin-top:3px; margin-left:30px; padding-top:7px"
         text.innerHTML += "{{line}}"
         if (i == highlight) {
           var color = document.createAttribute("style")
-          color.value = "font-size:15;margin:0px;background-color:yellow; margin-left:30px"
+          color.value = "background-color:yellow;"
           text.setAttributeNode(color)
         }
 
@@ -82,7 +82,7 @@
         i += 1
         {% endfor %}
         var style = document.createAttribute("style")
-        style.value = "float:right;"
+        style.value = "float:left;"
         textfield.setAttributeNode(style)
         /*ADD TO DIV*/
         doc.appendChild(dl)

@@ -90,28 +90,48 @@ html {
     outline:none !important;
   }
   
-  .resultpage {
+  #resultpage {
     padding:50px 0;
     position: absolute;
     top: 3%;
     left:15%
   }
 
-  .resultpage #p1,#p2 {
+  #resultpage #p1,#p2 {
     font-size: 23px;
   }
 
-  .resultpage img {
-      border-radius: 5px;
-      padding: 15px;
+  #resultpage img {
       width: 300px;
   }
 
-  .resultpage #results {
+  #results {
     top: 50%;
     left: 50%;
-    align-items: center;
     text-align: left;
-    display: absolute;
-    margin-left: 200px;
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+    clear:both;
+  }
+
+  .result {
+    max-height: 400px;
+    padding: 10px;
+  }
+
+  .textClass {
+    float:right;
+    overflow-y: scroll;
+    max-height: max-content;
+  }
+
+  .result a{
+    float: left;
+    padding-right: 5px;
+  }
+
+  .textClass p{
+    margin:0;
+    font-size:15px;
   }
